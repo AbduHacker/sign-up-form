@@ -1,13 +1,59 @@
 @font-face {
     font-family: 'norsebold';
-    src: url('norse-bold-webfont.woff2') format('woff2'),
-         url('norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body {
+    height: 100vh;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+}
+.logo-section {
+    background-image: url('/img/halie-west-25xggax4bSA-unsplash.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50%;
+}
+.logo img {
+    width: 15%;
+}
+.logo h1 {
+    font-family: 'norsebold', Roboto, sans-serif;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #ffffff;
+}
+.logo-section .attribute {
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+.logo-section .attribute a {
+    color: inherit;
 }
